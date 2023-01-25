@@ -20,6 +20,25 @@ html {
 	-ms-text-size-adjust: 100%;
 	-webkit-text-size-adjust: 100%;
 }
+.iframe-container {
+	display: grid;
+	grid-template-columns: repeat(2, 1fr);
+	padding: 0 5%; /* add padding to right and left sides */
+	grid-gap: 10px; /* add space between iframes */
+  }
+  
+  @media (max-width: 768px) {
+	.iframe-container {
+	  grid-template-columns: 1fr;
+	}
+  } 
+   
+  .bigger-iframe {
+	width: 100%; /*increase width*/
+	height: 337px; /*increase height*/
+	transform: scale(1.1); /* zoom in by 10% */
+  }
+  
 
 body {
 	margin: 0;
